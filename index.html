@@ -3,13 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#075985" />
+    <meta name="color-scheme" content="light" />
     <meta name="description" content="臺灣地震預警系統的演進與發展互動式簡報網頁" />
     <meta property="og:title" content="臺灣地震預警系統的演進與發展" />
     <meta property="og:description" content="中央氣象署地震測報中心簡報互動網頁" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:image" content="/cwa_eew_2026_gemini/slides/slide-01.jpg" />
+    <link rel="icon" href="data:," />
     <title>臺灣地震預警系統的演進與發展</title>
+    <style>
+      html,
+      body,
+      #root {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .app-loading {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        color: #08365f;
+        background:
+          radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.3), transparent 35%),
+          linear-gradient(135deg, #dff5ff, #f7fbff 55%, #dbeafe);
+        font-family: "Noto Sans TC", system-ui, sans-serif;
+        text-align: center;
+      }
+
+      .app-loading h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2rem, 6vw, 4.5rem);
+        line-height: 1.1;
+      }
+
+      .app-loading p {
+        margin: 0;
+        color: #475569;
+        font-size: 1.05rem;
+      }
+
+      .no-script {
+        max-width: 48rem;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        color: #10243f;
+        font-family: "Noto Sans TC", system-ui, sans-serif;
+      }
+
+      .no-script a {
+        color: #0369a1;
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="app-loading" aria-live="polite">
+        <div>
+          <h1>臺灣地震預警系統的演進與發展</h1>
+          <p>正在載入 50 頁完整簡報與互動內容...</p>
+        </div>
+      </main>
+    </div>
+    <noscript>
+      <main class="no-script">
+        <h1>臺灣地震預警系統的演進與發展</h1>
+        <p>此互動式簡報需要 JavaScript 才能使用搜尋、章節導覽、圖片放大與鍵盤操作。</p>
+        <p>
+          您仍可從
+          <a href="/cwa_eew_2026_gemini/slides/slide-01.jpg">第 1 頁原始簡報</a>
+          開始查看，並將網址中的頁碼依序改為 01 至 50。
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

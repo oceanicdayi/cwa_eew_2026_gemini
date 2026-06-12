@@ -18,8 +18,7 @@ npm run preview
 
 ## 部署到 GitHub Pages
 
-1. 將本專案內容推送到 `https://github.com/oceanicdayi/EEWS_CWA_Dev2026`
+1. 將本專案內容推送到 `https://github.com/oceanicdayi/cwa_eew_2026_gemini`
 2. 到 GitHub repo 的 Settings → Pages
 3. Source 選擇 GitHub Actions
 4. 推送到 main/master 後會自動部署
-

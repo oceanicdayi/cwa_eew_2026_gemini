@@ -4,7 +4,7 @@ import { Search, Maximize2, X, ChevronLeft, ChevronRight, Presentation, Menu, Ex
 import { slides, sections } from './data.js'
 import './style.css'
 
-const img = n => `/EEWS_CWA_Dev2026/slides/slide-${String(n).padStart(2,'0')}.jpg`
+const img = n => `${import.meta.env.BASE_URL}slides/slide-${String(n).padStart(2,'0')}.jpg`
 
 function useKey(handler){
   useEffect(()=>{ const f=e=>handler(e); window.addEventListener('keydown',f); return()=>window.removeEventListener('keydown',f)},[handler])
@@ -42,7 +42,7 @@ function App(){
         <div className="hero-actions">
           <a href="#slides" className="primary">開始瀏覽</a>
           <button onClick={()=>setLightbox(active)} className="secondary"><Presentation size={18}/> 演講模式</button>
-          <a className="secondary" href="https://github.com/oceanicdayi/EEWS_CWA_Dev2026" target="_blank" rel="noreferrer">◆ GitHub</a>
+          <a className="secondary" href="https://github.com/oceanicdayi/cwa_eew_2026_gemini" target="_blank" rel="noreferrer">◆ GitHub</a>
         </div>
       </div>
       <div className="hero-panel">

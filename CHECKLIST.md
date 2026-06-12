@@ -6,7 +6,7 @@
 - [x] 每張簡報可點擊放大
 - [x] 支援鍵盤：放大模式下 `←` / `→` 換頁、`Esc` 關閉
 - [x] 響應式設計：手機、平板、桌機皆可瀏覽
-- [x] GitHub Pages base path 已設定為 `/EEWS_CWA_Dev2026/`
+- [x] GitHub Pages base path 已設定為 `/cwa_eew_2026_gemini/`
 - [x] GitHub Actions 部署檔已建立：`.github/workflows/deploy.yml`
 - [x] 已執行 `npm run build`，建置成功
 
@@ -14,7 +14,7 @@
 
 部署完成後請開啟：
 
-`https://oceanicdayi.github.io/EEWS_CWA_Dev2026/`
+`https://oceanicdayi.github.io/cwa_eew_2026_gemini/`
 
 檢查：
 

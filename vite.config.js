@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/EEWS_CWA_Dev2026/',
+  base: '/cwa_eew_2026_gemini/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
